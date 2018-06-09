@@ -14,7 +14,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['CSRF_SECRET_KEY'] = b'rf5yQkNh00W54EgLBttbnsw8iiZmkk75nDPV'
 
 #session initiated
-SESSION_TYPE = 'redis'
+SESSION_TYPE = 'sqlalchemy'
 app.config.from_object(__name__)
 Session(app)
 
